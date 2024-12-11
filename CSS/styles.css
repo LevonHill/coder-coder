@@ -9,6 +9,20 @@ html{
 a{
     text-decoration: none;
 }
+
+
+
+
+.Nav-bar{
+background: brown;
+}
+
 .hero-section{
     background: rgb(17, 211, 11);
+}
+.About-me {
+    background: grey;
+}
+.skills{
+    background:yellowgreen;
 }
