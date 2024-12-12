@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--will need to revisit for browser optimization for possible more meta tags-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,63 @@
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/Styles.css">
 </head>
-
+<!--Navigation bar as Header-->
 <header>
-    <nav class = "Nav-bar">
-    <ul><a href="#">Home</a></ul>
-    <ul><a href="#">About Me</a></ul>
-    <ul><a href="#">Portfolio</a></ul>
-    <ul><a href="#">Contact</a></ul>
-    </nav>
+  <nav class="Nav-bar" aria-label="Main navigation">
+    <ul>
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+
 <body>
+  <!--Main content-->
     <main>
-<section class="hero-section">
-    <article>
-<img src="" alt="Picture of Developer">
-<h1>Hello My Name is <span>Levon Hill</span>
-    <button>Download Resume</button>
-    <button>Contact</button>
-</article>
-</section>
+      <!--Hero section focus on developer-->
+    <section id="hero-section">
+      <article>
+        <img src="" alt="Picture of Developer">
+        <h1>Hello My Name is <span>Levon Hill</span>
+        <button>Download Resume</button>
+        <button>Contact</button>
+      </article>
+    </section>
+<!--About Me Section-->
+    <section id="About-me">
+      <article>
+         <img src="" alt="College Graduation Photo of Developer">
 
-<section class="About-me">
-    <article>
-    <img src="" alt="Graduation Photo of Developer">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum?</p>
-</article>
-</section>
-
-<section class="skills">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum?</p>
+      </article>
+    </section>
+<!-- My Skills Section Nested LIsts-->
+  <section id="skills">
     <article>
     <h2>My Skills</h2>
     <p>Here are some of the technologies i have experience in</p>
     <ul>
-        <li>
-            <h3>Frontend Development</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>BootStrap</li>
-            </ul>
+      <li>
+         <h3>Frontend Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>BootStrap</li>
+    </ul>
         </li>
-        <li>
-            <h3>Backend Development</h3>
-            <ul>
-                 <li>Node.js</li>
+            <li>
+              <h3>Backend Development</h3>
+              <ul>
+                <li>Node.js</li>
                 <li>SQL</li>
                 <li>Python</li>
                 <li>Servicenow GlidAPI</li>
-        </li>
+            </li>
         </ul>
            <li>
             <h3>Tools & other Skills</h3>
@@ -69,6 +77,7 @@
         </article>
 </section>
     </main>
+    <!--My projects or Mock up Section-->
     <section id="projects">
         <h2>My Projects</h2>
         <p>Take a look at some of my completed and upcoming projects:</p>
@@ -107,12 +116,31 @@
           </article>
         </div>
       </section>
+<!--Contact Section to reach me-->
 
-    <footer class="main-footer">
+
+<section id ="Contact">
+
+      <form action=""method = "post">
+        <label for="Name">Name</label>
+        <input id="Name" type="text">
+       </form>
+
        <form action=""method = "post">
         <label for="Name">Name</label>
         <input id="Name" type="text">
        </form>
+
+       <form action=""method = "post">
+        <label for="Name">Name</label>
+        <input id="Name" type="text">
+       </form>
+</section>
+       <!--Footer Section End of Page-->
+
+    <footer class="main-footer">
+      <div class="footer"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
     </footer>
 </body>
 </html>
