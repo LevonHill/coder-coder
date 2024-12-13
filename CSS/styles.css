@@ -11,24 +11,27 @@ a{
 }
 
 
-
-
-.Nav-bar{
+/*Section ID block Styles*/
+#Navigation{
 background: brown;
 }
 
-.hero-section{
+#hero-section{
     background: rgb(17, 211, 11);
 }
-.About-me {
+#About-me {
     background: grey;
 }
-.skills{
+#skills{
     background:yellowgreen;
 }
 #projects {
     background: burlywood;
 }
+#Contact{
+    background:purple;
+}
 .main-footer{
    background: cyan;
 }
+

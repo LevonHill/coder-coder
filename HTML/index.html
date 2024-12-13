@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/CSS/Styles.css">
 </head>
 <!--Navigation bar as Header-->
-<header>
+<header id ="Navigation">
   <nav class="Nav-bar" aria-label="Main navigation">
     <ul>
       <li><a href="#hero-section">Home</a></li>
@@ -20,7 +20,6 @@
     </ul>
   </nav>
 </header>
-
 
 <body>
   <!--Main content-->
@@ -34,6 +33,8 @@
         <button>Contact</button>
       </article>
     </section>
+
+
 <!--About Me Section-->
     <section id="About-me">
       <article>
@@ -42,6 +43,8 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum?</p>
       </article>
     </section>
+
+
 <!-- My Skills Section Nested LIsts-->
   <section id="skills">
     <article>
@@ -77,13 +80,14 @@
         </article>
 </section>
     </main>
+
+
     <!--My projects or Mock up Section-->
     <section id="projects">
         <h2>My Projects</h2>
         <p>Take a look at some of my completed and upcoming projects:</p>
-        
-        <div class="projects-list">
           <!-- Completed Project -->
+
           <article class="project">
             <h3>Portfolio Website</h3>
             <p>A responsive portfolio showcasing my skills and projects.</p>
@@ -93,8 +97,8 @@
               <li><strong>Source Code:</strong> <a href="https://github.com/username/portfolio" target="_blank">GitHub</a></li>
             </ul>
           </article>
-      
           <!-- Another Completed Project -->
+
           <article class="project-two">
             <h3>Task Manager App</h3>
             <p>A web app to manage tasks efficiently with CRUD functionality.</p>
@@ -106,6 +110,7 @@
           </article>
       
           <!-- Future Project -->
+
           <article class="project-future">
             <h3>Coming Soon: E-Commerce Platform</h3>
             <p>An upcoming project focusing on creating a full-featured e-commerce platform.</p>
@@ -116,29 +121,34 @@
           </article>
         </div>
       </section>
+
 <!--Contact Section to reach me-->
-
-
 <section id ="Contact">
-
-      <form action=""method = "post">
-        <label for="Name">Name</label>
-        <input id="Name" type="text">
-       </form>
-
-       <form action=""method = "post">
-        <label for="Name">Name</label>
-        <input id="Name" type="text">
-       </form>
-
-       <form action=""method = "post">
-        <label for="Name">Name</label>
-        <input id="Name" type="text">
+      <h2>Contact Form</h2>
+      <p>Please Fill out the contact from to reach me </p>
+      <!--Form note to self ,Action attrib specifies the location on the server where data will be sent-->
+      <!--Form note to self , Method attrib , determines the http medthod used for handling the form Data-->
+      <form action="/HTML/index.html"method = "post">
+        <!--Add Form Elements Here always after action-->
+        <!--form Label links back to respective inputs, -->
+        <label for="first-name-entry">First Name</label>
+        <!--3 main elements that allow users to enter or select on form "inputs, "textarea,"dropdown"-->
+        <!--Types of inputs , "text, password, email, date, tel, number"-->
+        <input id = "first-name-entry" type ="text" name = "Name"maxlength ="65" placeholder ="First Name">
+        <label for ="last-name-entry">Last Name</label>
+        <input id ="last-name-entry" type ="text" name ="Name" maxlength="65" placeholder ="Last Name">
+        <label for ="email">Email</label>
+        <input id ="email" type ="email" name ="email" placeholder ="Email" maxlength ="100">
+        <!--Text area allows multiline text and used for comments or longer messages-->
+        <label for="user-comment">Feedback or Additonal Inquiry</label>
+        <textarea name="comment" id="user-comment"rows ="5" cols="30" ></textarea>
+        <!-- lasly button to forms at the end,takes form data to server two types , "reset" or "submit"   -->
+        <button type="submit">Submit</button>
        </form>
 </section>
-       <!--Footer Section End of Page-->
 
-    <footer class="main-footer">
+       <!--Footer Section End of Page-->
+      <footer class="main-footer">
       <div class="footer"></div>
       <p>Lorem ipsum dolor sit amet.</p>
     </footer>
