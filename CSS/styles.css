@@ -1,19 +1,19 @@
---root{
---primarybase:#ff6b6b;
---primarytint:#f03e3e;
---primaryshade:#c92a2a;
+:root{
+--primary-base:#ff6b6b;
+--primary-tint:#f03e3e;
+--primary-shade:#c92a2a;
 
---secondarybase:#51cf66;
---secondarytint:#b2f2bb;
---seocndaryshade: #2b8a3e;
+--secondary-base:#51cf66;
+--secondary-int:#b2f2bb;
+--secondary-shade: #2b8a3e;
 
---tertiarybase:#ffd43b;
---tertiarytint:#ffec99;
---tertiaryshade:#e67700;
+--tertiary-base:#ffd43b;
+--tertiary-tint:#ffec99;
+--tertiary-shade:#e67700;
 
---greybase: #adb5bd;
---greytint: #f1f3f5;
---greyshade:#495057;
+--grey-base: #adb5bd;
+--grey-tint: #f1f3f5;
+--grey-shade:#495057;
 
 --whites: #ffffff;
 --blacks:#000000;
@@ -30,6 +30,7 @@ html{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    
 }
 /*Typography
 Font-sizes
@@ -122,36 +123,40 @@ ul{
 /* Button component Pallet */
 
 .btn{
-    font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     text-decoration: none;
+    border-radius: 8px;
+    padding: 1.5rem 3rem;
 }
 
 .btn-primary:link, .btn-primary:visited{
-    color: #ffffff;
-    background-color:#ff6b6b;
+    color: var(--whites);
+    background-color: var(--primary-base);
+    
+    
 }
 
 .btn-primary:hover, .btn-primary:active{
-    color:#ffffff;
-    background-color:#f03e3e;
+    color:var(--whites);
+    background-color:var(--primary-tint);
 }
 
 .btn-secondary:link, .btn-secondary:visited{
-        color:#ffffff;
-        background-color:#51cf66;
+        color:var(--whites);
+        background-color:var(--secondary-base);
 }
 
 .btn-secondary:hover, .btn-secondary:active{
-    color: #ffffff;
-    background-color: #2b8a3e;
+    color: var(--whites);
+    background-color :var(--secondary-shade);
 }
 
 /*Section ID block Styles*/
 #Navigation{
-background: brown;
+background: cyan;
 display: flex;
+
 }
 
 #hero-section{
@@ -176,6 +181,7 @@ display: flex;
 
 .main-footer{
    background: cyan;
+ 
 }
 
 /*My Class Section*/
