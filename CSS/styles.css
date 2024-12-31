@@ -1,4 +1,22 @@
 --root{
+--primarybase:#ff6b6b;
+--primarytint:#f03e3e;
+--primaryshade:#c92a2a;
+
+--secondarybase:#51cf66;
+--secondarytint:#b2f2bb;
+--seocndaryshade: #2b8a3e;
+
+--tertiarybase:#ffd43b;
+--tertiarytint:#ffec99;
+--tertiaryshade:#e67700;
+
+--greybase: #adb5bd;
+--greytint: #f1f3f5;
+--greyshade:#495057;
+
+--whites: #ffffff;
+--blacks:#000000;
 
 }
 
