@@ -180,33 +180,32 @@ ul{
 
 /*Section ID block Styles*/
 #Navigation{
-background: cyan;
-display: flex;
+background: var(--grey-shade);
 
 }
 
 #hero-section{
-    background: rgb(17, 211, 11);
+    background: var(--grey-base);
 }
 
 #About-me {
-    background: grey;
+    background: var(--grey-base);
 }
 
 #skills{
-    background:yellowgreen;
+    background:var(--grey-base);
 }
 
 #projects {
-    background: burlywood;
+    background: var(--grey-base);
 }
 
 #Contact{
-    background:purple;
+    background:var(--grey-shade);
 }
 
 .main-footer{
-   background: cyan;
+   background: var(--whites);
  
 }
 
